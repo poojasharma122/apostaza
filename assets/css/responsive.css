@@ -1,0 +1,202 @@
+@media (max-width: 1540px) {
+    .footer-col a {
+        font-size: 14px;
+    }
+
+    .footer-col {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .bonus-btn {
+        font-size: 12px;
+    }
+
+    .betting-table-header {
+        display: none;
+    }
+
+    .bet-one,
+    .bet-two {
+        gap: 34px;
+    }
+
+    .bonus-label {
+        font-size: 14px;
+        line-height: 26px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 1070px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .betting-table .container {
+        padding: 0 30px;
+    }
+
+    .main-banner-content {
+        padding: 0 30px;
+    }
+
+    .betting-card-logo img {
+        height: auto;
+    }
+
+    .bonus-btn {
+        padding: 10px 18px;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+              padding: 42px 18px;
+        height: 60px;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: var(--blendclr);
+        padding-top: 90px;
+        gap: 32px;
+        align-items: center;
+        justify-content: flex-start;
+        z-index: 1000;
+        transition: all 0.3s;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .bet-two {
+        display: none;
+    }
+
+    .betting-card-logo {
+        width: 20%;
+    }
+
+    .bet-one {
+        justify-content: space-around;
+        width: 75%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .main-banner {
+        height: 450px;
+    }
+
+    .main-banner-title {
+        font-size: 27px;
+    }
+
+    .main-banner-text {
+        font-size: 15px;
+    }
+
+    h2.commonhead {
+        font-size: 30px;
+        line-height: normal;
+    }
+
+    .betting-card {
+        flex-direction: column;
+    }
+
+    .betting-flex {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .bet-two {
+        display: inline-flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .betting-card-features {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .bet-one {
+        width: 100%;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+    }
+
+    .betting-card-logo {
+        width: 40%;
+    }
+
+    .bonus-label {
+        font-size: 18px;
+    }
+
+    .betting-card-action {
+        width: 100%;
+    }
+
+    .bonus-btn {
+        font-size: 15px;
+        width: 100%;
+    }
+}
+@media (max-width:575px){
+  
+    .footer-pages-content-grp h3 {
+        font-size: 1.5rem;
+    }
+    .footer-pages-wrap {
+        padding: 1.25rem;
+     }
+}
+@media (max-width: 495px) {
+    
+
+    .bonus-label,
+    .betting-card-features {
+        font-size: 15px;
+    }
+
+    .bet-one,
+    .bet-two {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .bonus-label,
+    .betting-card-features {
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .bonus-label,
+    .betting-card-features {
+        font-size: 13px;
+    }
+}
