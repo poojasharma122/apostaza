@@ -1,19 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/syles.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <title>Termos e Condições</title>
 </head>
 
 <body>
+    <!--header-start-->
+    <header class="header">
+        <div class="logo">
+            <a href="#"><img src="assets/images/headerlogo.png" alt="headerlogo" /></a>
+        </div>
+        <nav class="nav" id="navMenu">
+            <a href="#">Página Inicial</a>
+            <a href="#">Comparação E Análises 2025</a>
+            <a href="#">Guias De Apostas</a>
+            <a href="#">Jogo Responsável</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    <!--header-end-->
 
 
+    <!-- Custom Banner Start -->
+    <section class="custom-banner terms-banner">
+        <div class="banner-content">
+            <h1>Termos e Condições</h1>
+        </div>
+    </section>
+    <!-- Custom Banner End -->
 
     <!-- Privacy Pages Content Section Start -->
     <section class="footer-pages-content-section  next_event">
@@ -199,8 +224,88 @@
 
 
 
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/main.js"></script>
+ <!--Footer-start-->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <a href="home.html" target="_blank"><img src="assets/images/headerlogo.png" alt="logo"></a>
+
+                <div class="ssl-inner">
+                    <div class="ssl-card" style="background-image: url('assets/images/ssl.png');"></div>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Ligações</h3>
+                <ul>
+                    <li><a href="#">Página Inicial</a></li>
+                    <li> <a href="#">Comparação E Análises 2025</a></li>
+                    <li> <a href="#">Guias De Apostas</a></li>
+                    <li><a href="#">Jogo Responsável</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Links rápidos
+                </h3>
+                <ul>
+                    <li><a href="#">Jogo Responsável
+                        </a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                    <li> <a href="#">Política De Privacidade</a></li>
+                    <li><a href="#">Termos e Condições</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col newsletter-col">
+                <h3>Social Icons</h3>
+                <div class="social_profile">
+                    <ul>
+                        <li>
+                            <img src="assets/images/facebook.svg" alt="facebook">
+                        </li>
+                        <li>
+                            <img src="assets/images/instagram.svg" alt="instagram">
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!--Footer-end-->
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            menuToggle.classList.toggle('open');
+        });
+
+        // Optional: close menu on link click (mobile)
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 992) {
+                    navMenu.classList.remove('active');
+                    menuToggle.classList.remove('open');
+                }
+            });
+        });
+
+        // Always close menu on resize to desktop
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 992) {
+                navMenu.classList.remove('active');
+                menuToggle.classList.remove('open');
+            }
+        });
+    </script>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
