@@ -64,7 +64,7 @@ h6 {
     --blendclr: #0e1118;
     --white: #fff;
     --black: #090d15;
-    --green: #47f783;
+    --green: #60bf80;
 }
 
 ::-webkit-scrollbar {
@@ -693,7 +693,13 @@ h2.commonhead {
 }
 
 .commontext-main {
-    padding-top: 50px;
+    padding: 50px 0;
+
+}
+
+.comparison-main .betano-card p,
+li {
+    color: var(--white) !important;
 }
 
 .betano-card {
@@ -721,9 +727,10 @@ h2.commonhead {
 .betano-card p,
 li {
     font-size: 16px;
-    color: var(--white);
+    color: var(--black);
     font-family: var(--Montserrat);
 }
+
 section.comparison-main {
     padding: 50px 0 80px;
 }
@@ -738,31 +745,34 @@ section.comparison-main {
     font-size: 25px;
 }
 
+table.bonus-table tr th {
+    color: var(--green) !important;
+}
 
 /* comparios-page-css-end*/
 
-
 /*Bet-table-start*/
 .bonus-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
 }
 
 .bonus-table th,
 .bonus-table td {
-  border: 1px solid #ddd;
-  padding: 12px;
-  text-align: center;
-  color:#fff;
+    border: 1px solid var(--white);
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--white);
 }
 
-.bonus-cards {
+/* .bonus-cards {
   display: none;
 }
 
 .bonus-card {
-  background: #fff;
+  background: var(--white);
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   padding: 20px;
@@ -785,7 +795,7 @@ section.comparison-main {
   margin-top: 10px;
   padding: 10px 20px;
   background: #ff7f27;
-  color: #fff;
+  color: var(--white);
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
@@ -793,16 +803,9 @@ section.comparison-main {
 
 .get-bonus:hover {
   background: #ff5c00;
-}
+} */
 
 /* Responsive Switch */
-@media (max-width: 575px) {
-  .bonus-table {
-    display: none;
-  }
-  .bonus-cards {
-    display: block;
-  }
-}
+
 
 /*Bet-table-end*/
