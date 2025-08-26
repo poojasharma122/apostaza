@@ -23,6 +23,9 @@ a {
     color: var(--white);
 }
 
+.nav a.active {
+    color: var(--green);
+}
 
 
 ul {
@@ -40,7 +43,7 @@ h6 {
     margin: 0;
     line-height: 1;
     letter-spacing: 0.6px;
-    color: var(--yellow);
+    color: var(--green);
     font-family: var(--Kumbh);
 }
 
@@ -58,11 +61,10 @@ h6 {
 :root {
     --Kumbh: "Kumbh Sans", sans-serif;
     --Montserrat: "Montserrat", sans-serif;
-    --blendclr: linear-gradient(90deg, #185c1b 0%, #000 50%, #185c1b 100%);
+    --blendclr: #0e1118;
     --white: #fff;
-    --black: #000;
-    --green: #046303;
-    --yellow: #d4af37;
+    --black: #090d15;
+    --green: #47f783;
 }
 
 ::-webkit-scrollbar {
@@ -104,16 +106,16 @@ p {
     justify-content: space-between;
     height: 70px;
     padding: 45px 40px;
-    border-bottom: 2px solid var(--yellow);
+    border-bottom: 2px solid var(--green);
     position: relative;
     z-index: 1001;
 }
 
 .logo img {
-    height: auto;
+    height: 80px;
     width: 100%;
     display: block;
-    max-width: 185px;
+    max-width: 100%;
 }
 
 .nav {
@@ -154,7 +156,7 @@ p {
     width: 28px;
     height: 4px;
     margin: 4px 0;
-    background: var(--yellow);
+    background: var(--green);
     border-radius: 2px;
     transition: 0.4s;
 }
@@ -175,8 +177,12 @@ p {
 
 /*Header-css-end*/
 /*Footer-css-start*/
+.footer-col.brand-col img {
+    height: 100px;
+}
+
 .footer {
-    border-top: 2px solid var(--yellow);
+    border-top: 2px solid var(--green);
     color: var(--white);
     font-family: 'Arial', sans-serif;
     font-size: 14px;
@@ -215,7 +221,7 @@ p {
     font-weight: bold;
     margin-bottom: 14px;
     color: var(--pink);
-    color: var(--yellow);
+    color: var(--green);
 }
 
 .footer-col ul {
@@ -299,7 +305,7 @@ p {
 /* Legal Notice Styles */
 .legal-notice {
     color: var(--white);
-    padding: 40px;
+    padding: 40px 0;
     border-radius: 0;
     margin: 0;
 }
@@ -313,13 +319,11 @@ p {
 .legal-notice-title {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--yellow);
+    color: var(--green);
     margin-bottom: 12px;
 }
 
 .legal-notice-text {
-    font-size: 1.1rem;
-    font-weight: 500;
     color: var(--white);
     line-height: 1.6;
 }
@@ -349,26 +353,25 @@ p {
 
 .main-banner-content {
     max-width: 1000px;
-    text-align: left;
-    margin-left: 0;
-    margin-right: auto;
+    text-align: center;
     padding: 0 40px;
     z-index: 1;
+    margin: 0 auto;
 }
 
 .main-banner-title {
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 800;
-    color: var(--yellow);
+    color: var(--green);
     margin-bottom: 18px;
     font-family: var(--Kumbh);
     line-height: 1.2;
-    max-width: 650px;
-    text-align: left;
+    max-width: 100%;
+    text-align: center;
 }
 
 .main-banner-text {
-    text-align: left;
+    text-align: center;
     font-size: 17px;
     color: var(--white);
     font-weight: 500;
@@ -391,7 +394,7 @@ h2.commonhead {
 .betting-table-header {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    background: var(--yellow);
+    background: var(--green);
     font-weight: 700;
     border-radius: 2px;
     margin-bottom: 18px;
@@ -492,9 +495,9 @@ h2.commonhead {
 }
 
 .bonus-btn {
-    background: var(--yellow);
+    background: var(--green);
     color: var(--white);
-    border: 1px solid var(--yellow);
+    border: 1px solid var(--green);
     font-weight: 700;
     font-size: 15px;
     padding: 13px 28px;
@@ -508,7 +511,7 @@ h2.commonhead {
 
 .bonus-btn:hover {
     background: transparent;
-    color: var(--yellow);
+    color: var(--green);
 }
 
 .betting-card-bonus {
@@ -518,9 +521,14 @@ h2.commonhead {
 
 
 /* Promo Section Styles */
+.promo-img {
+    height: 100%;
+}
+
 .promo-img img {
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .promo-text {
@@ -531,13 +539,14 @@ h2.commonhead {
 }
 
 .cst-btn a {
-    background: var(--yellow);
+    background: var(--green);
     padding: 10px 20px;
     display: block;
     margin-top: 20px;
     border-radius: 5px;
     max-width: max-content;
-    border: 1px solid var(--yellow);
+    border: 1px solid var(--green);
+    color: var(--black);
 }
 
 .cst-btn a:hover {
@@ -545,9 +554,9 @@ h2.commonhead {
     background: transparent;
 }
 
-section.promo-section {
+/* section.promo-section {
     padding-bottom: 50px;
-}
+} */
 
 .promo-text li {
     font-size: 17px;
@@ -566,6 +575,7 @@ section.promo-section {
     justify-content: center;
     position: relative;
 }
+
 .custom-banner .banner-content {
     text-align: center;
     color: var(--white);
@@ -573,11 +583,13 @@ section.promo-section {
     padding: 30px 42px;
     border-radius: 12px;
 }
+
 .custom-banner h1 {
     font-size: 2.5rem;
     font-weight: bold;
     margin: 0;
 }
+
 .footer-pages-wrap {
     max-width: 81.25rem;
     margin: 0 auto;
@@ -599,7 +611,7 @@ section.promo-section {
 .footer-pages-content-grp h3 {
     font-size: 1.7rem;
     margin-bottom: 0.9375rem;
-    color: var(--yellow);
+    color: var(--green);
     line-height: 1.4;
 }
 
@@ -651,16 +663,86 @@ section.promo-section {
 .footer-pages-content-grp a {
     color: white;
 }
-.cookies-banner{
+
+.cookies-banner {
     background: url("../images/cookiesbanner.jpg") center center / cover no-repeat;
 }
-.responsible-banner{
-    background:  url("../images/cookiesbanner.jpg") center center / cover no-repeat;
+
+.responsible-banner {
+    background: url("../images/cookiesbanner.jpg") center center / cover no-repeat;
 }
-.privacybanner{
-    background:  url("../images/privacybanner.jpg") center center / cover no-repeat;
+
+.privacybanner {
+    background: url("../images/privacybanner.jpg") center center / cover no-repeat;
 }
-.terms-banner{
-    background:  url("../images/termsbanner.jpg") center center / cover no-repeat;
+
+.terms-banner {
+    background: url("../images/termsbanner.jpg") center center / cover no-repeat;
 }
+
 /* Footer Pages CSS End*/
+
+/* comparios-page-css-start*/
+.comparison-main .row {
+    justify-content: center;
+    row-gap: 30px;
+}
+
+.comparisonbanner {
+    height: 500px;
+    background: url("../images/comparison-banner.jpg") center center / cover no-repeat;
+}
+
+.commontext-main {
+    padding-top: 50px;
+}
+
+.betano-card {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border: 2px solid var(--green);
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    height: 100%;
+}
+
+.betano-top {
+    display: flex;
+    align-items: start;
+    flex-direction: column-reverse;
+    padding-bottom: 15px;
+    gap: 20px;
+}
+
+.betano-card p,
+li {
+    font-size: 16px;
+    color: var(--white);
+    font-family: var(--Montserrat);
+}
+
+.comparison-main .col-lg-6.col-sm-12 {
+    padding: 0;
+}
+
+section.comparison-main {
+    padding: 50px 0 80px;
+}
+
+.betano-logo.esclogo img {
+    max-width: 250px;
+}
+
+.betano-bottom h3 {
+    margin: 15px 0;
+    color: var(--green);
+    font-size: 25px;
+}
+
+
+/* comparios-page-css-end*/
