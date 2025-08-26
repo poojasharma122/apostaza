@@ -823,6 +823,9 @@ table.bonus-table tr th {
 /*Bet-table-end*/
 
 /* betting-guides-page-css-start*/
+.betguide-section .betguide-bottom li {
+    margin-top: 5px;
+}
 .betguide-section .row.betguideflex {
     padding: 20px 0;
 }
