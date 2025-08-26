@@ -486,7 +486,9 @@ h2.commonhead {
     font-size: 1rem;
     font-weight: 500;
 }
-
+.betting-card-features li{
+    color: var(--black) !important;
+}
 .betting-card-action {
     display: flex;
     align-items: center;
@@ -577,13 +579,13 @@ h2.commonhead {
 
 .custom-banner .banner-content {
     text-align: center;
-    color: var(--white);
-    background: rgba(0, 0, 0, 0.4);
+
     padding: 30px 42px;
     border-radius: 12px;
 }
 
 .custom-banner h1 {
+        color: var(--white);
     font-size: 2.5rem;
     font-weight: bold;
     margin: 0;
@@ -668,7 +670,7 @@ h2.commonhead {
 }
 
 .responsible-banner {
-    background: url("../images/cookiesbanner.jpg") center center / cover no-repeat;
+    background: url("../images/responsible-banner.jpg") center center / cover no-repeat;
 }
 
 .privacybanner {
@@ -805,7 +807,76 @@ table.bonus-table tr th {
   background: #ff5c00;
 } */
 
-/* Responsive Switch */
-
 
 /*Bet-table-end*/
+
+/* betting-guides-page-css-start*/
+.betguide-section .row.betguideflex {
+    padding: 20px 0;
+}
+.guidebanner {
+      height: 500px;
+    background: url(../images/bettingguide-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+.commontext-main.guides {
+    padding-bottom: 0;
+}
+.betguide-section {
+  padding: 50px 0 0;
+}
+
+.betguide-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0;
+}
+
+.betguide-info {
+     width: 70%;
+}
+
+.betguide-info h2 {
+  margin-bottom: 15px;
+}
+
+.betguide-info p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.betguide-img {
+     width: 30%;
+  text-align: right;
+}
+.betguideflex .betguide-top {
+    flex-direction: row-reverse !important;
+}
+.betguide-img img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.betguide-bottom {
+    padding: 30px 0 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.betguide-main {
+    padding: 20px;
+    border: 2px solid var(--green);
+}
+.betguide-bottom h3 {
+  font-size: 23px;
+}
+
+.betguide-bottom ul {
+  margin: 10px 0 20px 20px;
+  list-style: disc;
+}
+
+/* betting-guides-page-css-end*/

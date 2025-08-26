@@ -130,11 +130,33 @@
     .bonus-section .container::-webkit-scrollbar-thumb:hover {
         background-color: var(--green);
     }
-
+     .betguide-top {
+        align-items: start;
+        gap: 0;
+        flex-direction: column-reverse;
+    }
+    .betguide-info , .betguide-img{
+        width: 100%;
+    }
+    .betguide-info{
+        padding: 30px 0;
+    }
+    .betguide-bottom{
+        padding: 0;
+    }
+    .betguide-bottom h3 {
+    font-size: 19px;
+}
+.betguideflex .betguide-top {
+    flex-direction: column-reverse !important;
+}
 }
 
 
 @media (max-width: 767px) {
+    .betguide-bottom{
+        grid-template-columns: 1fr;
+    }
     .main-banner {
         height: 450px;
     }
@@ -214,6 +236,9 @@
   .bonus-cards {
     display: none;
   } */
+   .custom-banner {
+    height: 400px;
+}
     .cst-btn a {
         font-size: 14px;
     }
