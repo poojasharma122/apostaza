@@ -2,36 +2,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 body {
-    background: var(--blendclr);
-    font-family: "Kumbh Sans", sans-serif;
-    font-family: "Montserrat", sans-serif;
+background: var(--blendclr);
+font-family: "Kumbh Sans", sans-serif;
+font-family: "Montserrat", sans-serif;
 }
 
 img {
-    width: 100%;
+width: 100%;
 }
 
 a {
-    text-decoration: none;
-    font-family: var(--Montserrat);
-    color: var(--white);
+text-decoration: none;
+font-family: var(--Montserrat);
+color: var(--white);
 }
 
 .nav a.active {
-    color: var(--green);
+color: var(--green);
 }
 
 
 ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+margin: 0;
+padding: 0;
+list-style: none;
 }
 
 h1,
@@ -40,868 +40,928 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
-    line-height: 1;
-    letter-spacing: 0.6px;
-    color: var(--green);
-    font-family: var(--Kumbh);
+margin: 0;
+line-height: 1;
+letter-spacing: 0.6px;
+color: var(--green);
+font-family: var(--Kumbh);
 }
 
 .main-scroll {
-    overflow: hidden;
+overflow: hidden;
 }
 
 .container {
-    max-width: 1400px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 40px;
+max-width: 1400px;
+width: 100%;
+margin: 0 auto;
+padding: 0 40px;
 }
 
 :root {
-    --Kumbh: "Kumbh Sans", sans-serif;
-    --Montserrat: "Montserrat", sans-serif;
-    --blendclr: #0e1118;
-    --white: #fff;
-    --black: #090d15;
-    --green: #60bf80;
+--Kumbh: "Kumbh Sans", sans-serif;
+--Montserrat: "Montserrat", sans-serif;
+--blendclr: #0e1118;
+--white: #fff;
+--black: #090d15;
+--green: #60bf80;
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
+width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #000;
+background: #000;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--pink);
-    border-radius: 10px;
+background: var(--pink);
+border-radius: 10px;
 }
 
 .heading h2 {
-    font-size: 32px;
-    font-weight: 700;
-    color: #000;
-    line-height: 40px;
-    margin-bottom: 15px;
+font-size: 32px;
+font-weight: 700;
+color: #000;
+line-height: 40px;
+margin-bottom: 15px;
 }
 
 p {
-    color: var(--white);
-    font-size: 19px;
-    font-weight: 500;
-    line-height: 25px;
-    margin: 0;
-    font-family: var(--Montserrat);
+color: var(--white);
+font-size: 19px;
+font-weight: 500;
+line-height: 25px;
+margin: 0;
+font-family: var(--Montserrat);
 }
 
 
 /*header-start*/
 /* Header Styles */
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 40px;
-    border-bottom: 2px solid var(--green);
-    position: relative;
-    z-index: 1001;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 12px 40px;
+border-bottom: 2px solid var(--green);
+position: relative;
+z-index: 1001;
 }
 
 .logo img {
-    height: 80px;
-    width: 100%;
-    display: block;
-    max-width: 100%;
+height: 80px;
+width: 100%;
+display: block;
+max-width: 100%;
 }
 
 .nav {
-    display: flex;
-    gap: 32px;
+display: flex;
+gap: 32px;
 }
 
 .nav a {
-    color: var(--white);
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: 0.2px;
-    position: relative;
+color: var(--white);
+text-decoration: none;
+font-size: 15px;
+font-weight: 600;
+letter-spacing: 0.2px;
+position: relative;
 }
 
 .nav a:hover,
 .nav a:focus {
-    color: #23a03c;
+color: #23a03c;
 }
 
 .menu-toggle {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 38px;
-    height: 38px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    z-index: 1100;
-    margin-left: 18px;
+display: none;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 38px;
+height: 38px;
+background: none;
+border: none;
+cursor: pointer;
+z-index: 1100;
+margin-left: 18px;
 }
 
 .menu-toggle span {
-    display: block;
-    width: 28px;
-    height: 4px;
-    margin: 4px 0;
-    background: var(--green);
-    border-radius: 2px;
-    transition: 0.4s;
+display: block;
+width: 28px;
+height: 4px;
+margin: 4px 0;
+background: var(--green);
+border-radius: 2px;
+transition: 0.4s;
 }
 
 /* Hamburger animation */
 .menu-toggle.open span:nth-child(1) {
-    transform: rotate(45deg) translate(6px, 6px);
+transform: rotate(45deg) translate(6px, 6px);
 }
 
 .menu-toggle.open span:nth-child(2) {
-    opacity: 0;
+opacity: 0;
 }
 
 .menu-toggle.open span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -7px);
+transform: rotate(-45deg) translate(7px, -7px);
 }
 
 
 /*Header-css-end*/
 /*Footer-css-start*/
 .ssl-inner img {
-    max-width: 200px;
-    margin-top: 20px;
+max-width: 200px;
+margin-top: 20px;
 }
 .footer-col.brand-col img {
-    height: 80px;
+height: 80px;
 }
 
 .footer {
-    border-top: 2px solid var(--green);
-    color: var(--white);
-    font-family: 'Arial', sans-serif;
-    font-size: 14px;
+border-top: 2px solid var(--green);
+color: var(--white);
+font-family: 'Arial', sans-serif;
+font-size: 14px;
 }
 
 .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 60px 20px;
-    border-bottom: 1px solid var(--white);
-    max-width: 1400px;
-    margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 60px 20px;
+border-bottom: 1px solid var(--white);
+max-width: 1400px;
+margin: 0 auto;
 }
 
 .brand {
-    font-size: 18px;
-    letter-spacing: 2px;
-    font-weight: 700;
-    margin-bottom: 15px;
+font-size: 18px;
+letter-spacing: 2px;
+font-weight: 700;
+margin-bottom: 15px;
 }
 
 .desc {
-    max-width: 240px;
-    margin-bottom: 20px;
-    color: #ccc;
+max-width: 240px;
+margin-bottom: 20px;
+color: #ccc;
 }
 
 .cards img {
-    height: 20px;
-    margin-right: 6px;
+height: 20px;
+margin-right: 6px;
 }
 
 .footer-col h3 {
-    font-size: 23px;
-    font-weight: bold;
-    margin-bottom: 14px;
-    color: var(--pink);
-    color: var(--green);
+font-size: 23px;
+font-weight: bold;
+margin-bottom: 14px;
+color: var(--pink);
+color: var(--green);
 }
 
 .footer-col ul {
-    list-style: none;
-    padding: 0;
+list-style: none;
+padding: 0;
 }
 
 .footer-col ul li {
-    margin-bottom: 8px;
+margin-bottom: 8px;
 }
 
 .footer-col ul li a {
-    color: var(--white);
-    text-decoration: none;
-    font-size: 19px;
+color: var(--white);
+text-decoration: none;
+font-size: 19px;
 }
 
 .footer-col ul li a:hover {
-    color: var(--pink);
+color: var(--pink);
 }
 
 .newsletter-form {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid var(--white);
-    margin-top: 10px;
+display: flex;
+align-items: center;
+border-bottom: 1px solid var(--white);
+margin-top: 10px;
 }
 
 .newsletter-form input {
-    background: transparent;
-    border: none;
-    color: var(--white);
-    flex: 1;
-    padding: 10px 0;
-    outline: none;
+background: transparent;
+border: none;
+color: var(--white);
+flex: 1;
+padding: 10px 0;
+outline: none;
 }
 
 .newsletter-form button {
-    background: none;
-    border: none;
-    color: var(--white);
-    font-size: 20px;
-    cursor: pointer;
+background: none;
+border: none;
+color: var(--white);
+font-size: 20px;
+cursor: pointer;
 }
 
 .social-icons {
-    margin-top: 20px;
+margin-top: 20px;
 }
 
 .social_profile li img:hover {
-    transform: translateY(-3px);
-    transition: .3s;
+transform: translateY(-3px);
+transition: .3s;
 }
 
 .social_profile ul {
-    display: flex;
-    gap: 10px;
+display: flex;
+gap: 10px;
 }
 
 .social_profile li svg:hover {
-    transform: translateY(-3px);
-    transition: .3s;
+transform: translateY(-3px);
+transition: .3s;
 }
 
 .social_profile li img {
-    max-width: 24px;
+max-width: 24px;
 }
 
 .social-icons i {
-    margin-right: 15px;
-    cursor: pointer;
-    color: #ccc;
-    transition: color 0.3s ease;
+margin-right: 15px;
+cursor: pointer;
+color: #ccc;
+transition: color 0.3s ease;
 }
 
 .social-icons i:hover {
-    color: var(--white);
+color: var(--white);
 }
 
 
 /* Legal Notice Styles */
 .legal-notice {
-    color: var(--white);
-    padding: 40px 0;
-    border-radius: 0;
-    margin: 0;
+color: var(--white);
+padding: 40px 0;
+border-radius: 0;
+margin: 0;
 }
 
 .legal-notice-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
+max-width: 1200px;
+margin: 0 auto;
+text-align: center;
 }
 
 .legal-notice-title {
-    font-weight: 700;
-    color: var(--green);
-    margin-bottom: 12px;
+font-weight: 700;
+color: var(--green);
+margin-bottom: 12px;
 }
 
 .legal-notice-text {
-    color: var(--white);
-    line-height: 1.6;
+color: var(--white);
+line-height: 1.6;
 }
 
 
 
 /* Banner Styles */
 .main-banner {
-    height: 700px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    background: url(../images/homebanner1.jpg) center center / cover no-repeat;
-    border-radius: 0 0 40px 40px;
-    overflow: hidden;
-    background-position: bottom;
+height: 700px;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+background: url(../images/homebanner1.jpg) center center / cover no-repeat;
+border-radius: 0 0 40px 40px;
+overflow: hidden;
+background-position: bottom;
 }
 
 .main-banner::after {
-    position: absolute;
-    background: #0000007d;
-    inset: 0;
-    content: '';
+position: absolute;
+background: #0000007d;
+inset: 0;
+content: '';
 }
 
 .main-banner-content {
-    max-width: 1000px;
-    text-align: center;
-    padding: 0 40px;
-    z-index: 1;
-    margin: 0 auto;
+max-width: 1000px;
+text-align: center;
+padding: 0 40px;
+z-index: 1;
+margin: 0 auto;
 }
 
 .main-banner-title {
-    font-size: 40px;
-    font-weight: 800;
-    color: var(--green);
-    margin-bottom: 18px;
-    font-family: var(--Kumbh);
-    line-height: 1.2;
-    max-width: 100%;
-    text-align: center;
+font-size: 40px;
+font-weight: 800;
+color: var(--green);
+margin-bottom: 18px;
+font-family: var(--Kumbh);
+line-height: 1.2;
+max-width: 100%;
+text-align: center;
 }
 
 .main-banner-text {
-    text-align: center;
-    font-size: 17px;
-    color: var(--white);
-    font-weight: 500;
-    line-height: 1.6;
+text-align: center;
+font-size: 17px;
+color: var(--white);
+font-weight: 500;
+line-height: 1.6;
 }
 
-/* Betting Table Header */
+
 h2.commonhead {
-    font-size: 35px;
-    margin-bottom: 40px;
-    text-align: center;
+font-size: 35px;
+margin-bottom: 40px;
+text-align: center;
 }
-
-.betting-table {
-    width: 100%;
-    max-width: 100%;
-    padding: 80px 0 50px;
-}
-
-.betting-table-header {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    background: var(--green);
-    font-weight: 700;
-    border-radius: 2px;
-    margin-bottom: 18px;
-    text-align: center;
-    letter-spacing: 0;
-    padding: 7px 20px;
-}
-
-.betting-table .container {
-    max-width: 1500px;
-}
-
-/* Betting Card */
-.betting-flex {
-    display: flex;
-    justify-content: space-between;
-    width: 79%;
-    align-items: center;
-    gap: 33px;
-}
-
-
-
-
-
-.bet-one {
-    display: flex;
-    gap: 70px;
-}
-
-
-
-.bet-two {
-    display: flex;
-    gap: 80px;
-    text-align: center;
-    justify-content: center;
-}
-
-.betting-card {
-    padding: 14px 7px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: var(--white);
-    border-radius: 14px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
-    margin-bottom: 24px;
-    position: relative;
-    overflow: hidden;
-    gap: 10px;
-}
-
-.betting-card-logo {
-    text-align: center;
-    width: 15%;
-}
-
-.betting-card-logo img {
-    max-width: 203px;
-    background: var(--white);
-    transition: box-shadow 0.2s;
-    height: 130px;
-    object-fit: contain;
-}
-
-.betting-table-header>div {
-    padding: 14px 0;
-    color: var(--white);
-    font-size: 15px;
-}
-
-.bonus-amount {
-    font-size: 1.7rem;
-    font-weight: 700;
-    line-height: 1;
-}
-
-.bonus-label {
-    font-size: 0.97rem;
-    font-weight: 600;
-    letter-spacing: 0;
-    margin-top: 2px;
-}
-
-.betting-card-features {
-    list-style: none;
-    padding: 0 0 0 8px;
-    margin: 0;
-    font-size: 1rem;
-    font-weight: 500;
-}
-.betting-card-features li{
-    color: var(--black) !important;
-}
-.betting-card-action {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.bonus-btn {
-    background: var(--green);
-    color: var(--white);
-    border: 1px solid var(--green);
-    font-weight: 700;
-    font-size: 13px;
-    padding: 13px 28px;
-    border-radius: 12px;
-    text-decoration: none;
-    transition: background 0.2s;
-    box-shadow: 0 2px 8px rgba(126, 211, 33, 0.08);
-    display: inline-block;
-    text-align: center;
-}
-
-.bonus-btn:hover {
-    background: transparent;
-    color: var(--green);
-}
-
-.betting-card-bonus {
-    text-align: center;
-}
-
-
 
 /* Promo Section Styles */
 .promo-img {
-    height: 100%;
+height: 100%;
 }
 
 .promo-img img {
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+height: 100%;
+object-fit: cover;
+border-radius: 10px;
 }
 
 .promo-text {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 100%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+height: 100%;
 }
 
 .cst-btn a {
-    background: var(--green);
-    padding: 10px 20px;
-    display: block;
-    margin-top: 20px;
-    border-radius: 5px;
-    max-width: max-content;
-    border: 1px solid var(--green);
-    color: var(--black);
+background: var(--green);
+padding: 10px 20px;
+display: block;
+margin-top: 20px;
+border-radius: 5px;
+max-width: max-content;
+border: 1px solid var(--green);
+color: var(--black);
 }
 
 .cst-btn a:hover {
-    color: var(--white);
-    background: transparent;
+color: var(--white);
+background: transparent;
 }
 
 /* section.promo-section {
-    padding-bottom: 50px;
+padding-bottom: 50px;
 } */
 
 .promo-text li {
-    font-size: 17px;
-    color: var(--white);
-    margin-top: 15px;
+font-size: 17px;
+color: var(--white);
+margin-top: 15px;
 }
 
 img.twittericon {
-    filter: invert(1);
+filter: invert(1);
 }
 /* Footer Pages CSS End*/
+
+/*  Best-Betting-Start-Css-Start*/
+.hometable {
+    width: 100%;
+    padding: 50px 20px;
+}
+/* .hometable .container {
+    max-width: max-content;
+}    */
+    .hometable table {
+      width: 100%;
+    border-collapse: collapse;
+    display: table;
+    max-width: 1100px;
+    margin: 0 auto;
+    }
+
+    .hometable thead {
+      background: var(--green);
+      color: var(--white);
+    }
+.hometable td {
+    color: var(--white);
+    font-size: 16px;
+    font-family: 'Montserrat';
+}
+    .hometable th,
+    .hometable td {
+      padding: 15px;
+      text-align: center;
+        border-bottom: 1px solid #2e2d2d;
+    white-space: nowrap;
+    }
+
+   .hometable td img {
+    max-width: 148px;
+    height: 117px;
+    object-fit: contain;
+}
+
+    .hometable .btn {
+     background: var(--green);
+      color: var(--white);
+      padding: 8px 14px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      display: inline-block;
+      border: 1px solid var(--green);
+    }
+    .hometable .btn:hover{
+        background: transparent;
+        color: var(--green);
+    }
+/*  Best-Betting-Start-Css-End*/
+
 .custom-banner {
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+background-size: cover;
+background-position: center;
+height: 500px;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
 }
 .custom-banner::after {
-    position: absolute;
-    content: '';
-    inset: 0;
-    background: #00000061;
+position: absolute;
+content: '';
+inset: 0;
+background: #00000061;
 }
 .custom-banner .banner-content {
-    text-align: center; 
-    padding: 30px 42px;
-    border-radius: 12px;
-    z-index: 1;
+text-align: center; 
+padding: 30px 42px;
+border-radius: 12px;
+z-index: 1;
 }
 
 .custom-banner h1 {
-        color: var(--green);
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin: 0;
+    color: var(--green);
+font-size: 2.5rem;
+font-weight: bold;
+margin: 0;
 }
 
 .footer-pages-wrap {
-    max-width: 81.25rem;
-    margin: 0 auto;
-    border-radius: 1.875rem;
-    position: relative;
-    z-index: 99;
-    padding: 40px 0;
+max-width: 81.25rem;
+margin: 0 auto;
+border-radius: 1.875rem;
+position: relative;
+z-index: 99;
+padding: 40px 0;
 }
 
 .footer-pages-content-grp {
-    margin-bottom: 1.2rem;
-    border-radius: 0.625rem;
+margin-bottom: 1.2rem;
+border-radius: 0.625rem;
 }
 
 .footer-pages-content-grp:last-child {
-    margin-bottom: 0px;
+margin-bottom: 0px;
 }
 
 .footer-pages-content-grp h3 {
-    font-size: 1.7rem;
-    margin-bottom: 0.9375rem;
-    color: var(--green);
-    line-height: 1.4;
+font-size: 1.7rem;
+margin-bottom: 0.9375rem;
+color: var(--green);
+line-height: 1.4;
 }
 
 .footer-pages-content-grp strong {
-    font-size: 1.125rem;
+font-size: 1.125rem;
 }
 
 .footer-pages-content-grp p {
-    font-size: 1.0625rem;
-    margin-bottom: 0.5rem;
-    color: var(--white);
-    font-weight: 500;
+font-size: 1.0625rem;
+margin-bottom: 0.5rem;
+color: var(--white);
+font-weight: 500;
 }
 
 .footer-pages-content-grp ul {
-    list-style: none;
-    padding-left: 1.25rem;
+list-style: none;
+padding-left: 1.25rem;
 }
 
 .footer-pages-content-grp ul li {
-    list-style-type: disc;
+list-style-type: disc;
 }
 
 .footer-pages-content-grp ul li::marker {
-    color: var(--white);
+color: var(--white);
 }
 
 .footer-pages-content-grp p a {
-    display: inline-block;
-    transition: 0.4s all ease-in-out;
-    text-underline-offset: 4px;
-    font-weight: 600;
+display: inline-block;
+transition: 0.4s all ease-in-out;
+text-underline-offset: 4px;
+font-weight: 600;
 }
 
 .footer-pages-content-grp p a:hover {
-    text-decoration: underline;
+text-decoration: underline;
 }
 
 .footer-pages-content-grp.ft_diff {
-    background: #191919;
-    width: max-content;
-    padding: 1.25rem;
+background: #191919;
+width: max-content;
+padding: 1.25rem;
 }
 
 .footer-pages-content-grp.ft_diff p {
-    color: var(--white);
+color: var(--white);
 }
 
 .footer-pages-content-grp a {
-    color: white;
+color: white;
 }
 
 .cookies-banner {
-    background: url("../images/cookiesbanner.jpg") center center / cover no-repeat;
+background: url("../images/cookiesbanner.jpg") center center / cover no-repeat;
 }
 
 .responsible-banner {
-    background: url("../images/responsible-banner.jpg") center center / cover no-repeat;
+background: url("../images/responsible-banner.jpg") center center / cover no-repeat;
 }
 
 .privacybanner {
-    background: url("../images/privacybanner.jpg") center center / cover no-repeat;
+background: url("../images/privacybanner.jpg") center center / cover no-repeat;
 }
 
 .terms-banner {
-    background: url("../images/termsbanner.jpg") center center / cover no-repeat;
+background: url("../images/termsbanner.jpg") center center / cover no-repeat;
 }
 
 /* Footer Pages CSS End*/
 
 /* comparios-page-css-start*/
 .comparison-main .row {
-    justify-content: center;
-    row-gap: 30px;
+justify-content: center;
+row-gap: 30px;
 }
 
 .comparisonbanner {
-    height: 500px;
-    background: url("../images/comparison-banner.jpg") center center / cover no-repeat;
+height: 500px;
+background: url("../images/comparison-banner.jpg") center center / cover no-repeat;
 }
 
 .commontext-main {
-    padding: 50px 0;
+padding: 50px 0;
 
 }
 .comparison-main .betano-card li{
-    list-style: disc;
-    margin-left: 20px;
+list-style: disc;
+margin-left: 20px;
 }
 .comparison-main .betano-card p,
 li {
-    color: var(--white) !important;
+color: var(--white) !important;
 }
 
 .betano-card {
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    border: 2px solid var(--green);
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
-    height: 100%;
+width: 100%;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+font-family: Arial, sans-serif;
+padding: 20px;
+border: 2px solid var(--green);
+/* display: flex;
+flex-direction: column;
+justify-content: space-between; */
+height: 100%;
 }
 
 .betano-top {
-    display: flex;
-    align-items: start;
-    flex-direction: column-reverse;
-    padding-bottom: 15px;
-    gap: 20px;
-    position: relative;
+display: flex;
+align-items: start;
+flex-direction: column-reverse;
+padding-bottom: 15px;
+gap: 20px;
+position: relative;
 }
 .betano-card .betano-info h2 {
-    position: absolute;
-    left: auto;
-    right: 60px;
-    top: 35px;
+position: absolute;
+left: auto;
+right: 60px;
+top: 35px;
 }
 .betano-card p,
 li {
-    font-size: 16px;
-    color: var(--black);
-    font-family: var(--Montserrat);
+font-size: 16px;
+color: var(--black);
+font-family: var(--Montserrat);
 }
 
 section.comparison-main {
-    padding: 50px 0 80px;
+padding: 50px 0 80px;
 }
 .betano-logo img {
-    height: 120px;
-    max-width: 250px;
+height: 120px;
+max-width: 250px;
 }
 .betano-logo.esclogo img {
-    max-width: 250px;
+max-width: 250px;
 }
 
 .betano-bottom h3 {
-    margin: 15px 0;
-    color: var(--green);
-    font-size: 25px;
+margin: 15px 0;
+color: var(--green);
+font-size: 25px;
 }
 
 table.bonus-table tr th {
-    color: var(--green) !important;
+color: var(--green) !important;
 }
 
 /* comparios-page-css-end*/
 
 /*Bet-table-start*/
 .bonus-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
+width: 100%;
+border-collapse: collapse;
+margin: 20px 0;
 }
 
 .bonus-table th,
 .bonus-table td {
-    border: 1px solid var(--white);
-    padding: 12px;
-    text-align: center;
-    font-size: 14px;
-    color: var(--white);
+border: 1px solid var(--white);
+padding: 12px;
+text-align: center;
+font-size: 14px;
+color: var(--white);
 }
+/*Bet-table-end*/
 
+/*bonus-card-start*/
 /* .bonus-cards {
-  display: none;
+display: none;
 }
 
 .bonus-card {
-  background: var(--white);
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  padding: 20px;
-  margin-bottom: 20px;
-  text-align: center;
+background: var(--white);
+border-radius: 12px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+padding: 20px;
+margin-bottom: 20px;
+text-align: center;
 }
 
 .bonus-card h3 {
-  margin-bottom: 10px;
-  font-size: 20px;
+margin-bottom: 10px;
+font-size: 20px;
 }
 
 .bonus-card p {
-  margin: 6px 0;
-  font-size: 14px;
+margin: 6px 0;
+font-size: 14px;
 }
 
 .get-bonus {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background: #ff7f27;
-  color: var(--white);
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
+display: inline-block;
+margin-top: 10px;
+padding: 10px 20px;
+background: #ff7f27;
+color: var(--white);
+border-radius: 8px;
+text-decoration: none;
+font-weight: bold;
 }
 
 .get-bonus:hover {
-  background: #ff5c00;
+background: #ff5c00;
 } */
 
-
-/*Bet-table-end*/
+/*bonus-card-end*/
 
 /* betting-guides-page-css-start*/
 .betguide-section .betguide-bottom li {
-    margin-top: 5px;
+margin-top: 5px;
 }
 .betguide-section .row.betguideflex {
-    padding: 20px 0;
+padding: 20px 0;
 }
 .guidebanner {
-      height: 500px;
-    background: url(../images/bettingguide-banner.jpg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
+    height: 500px;
+background: url(../images/bettingguide-banner.jpg);
+background-repeat: no-repeat;
+background-position: unset;
+background-size: cover;
 }
 .commontext-main.guides {
-    padding-bottom: 0;
+padding-bottom: 0;
 }
 .betguide-section {
-  padding: 50px 0 0;
+padding: 50px 0 0;
 }
 
 .betguide-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  padding: 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 40px;
+padding: 0;
 }
 
 .betguide-info {
-     width: 70%;
+    width: 70%;
 }
 
 .betguide-info h2 {
-  margin-bottom: 15px;
+margin-bottom: 15px;
 }
 
 .betguide-info p {
-  font-size: 16px;
-  line-height: 1.6;
+font-size: 16px;
+line-height: 1.6;
 }
 
 .betguide-img {
-     width: 30%;
-  text-align: right;
+    width: 30%;
+text-align: right;
 }
 .betguideflex .betguide-top {
-    flex-direction: row-reverse !important;
+flex-direction: row-reverse !important;
 }
 .betguide-img img {
-  max-width: 100%;
-  border-radius: 10px;
+    max-width: 100%;
+    border-radius: 10px;
+    height: 300px;
+    object-fit: cover;
 }
 .betguide-bottom {
-    padding: 30px 0 0;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+padding: 30px 0 0;
+width: 100%;
+display: grid;
+grid-template-columns: 1fr 1fr;
 }
 .betguide-main {
-    padding: 20px;
-    border: 2px solid var(--green);
+padding: 20px;
+border: 2px solid var(--green);
 }
 .betguide-bottom h3 {
-  font-size: 23px;
+font-size: 23px;
 }
 
 .betguide-bottom ul {
-  margin: 10px 0 20px 20px;
-  list-style: disc;
+margin: 10px 0 20px 20px;
+list-style: disc;
 }
 
 /* betting-guides-page-css-end*/
+
+
+
+
+
+
+
+/* Betting Table Header */
+/* .betting-table {
+width: 100%;
+max-width: 100%;
+padding: 80px 0 50px;
+}
+
+.betting-table-header {
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+background: var(--green);
+font-weight: 700;
+border-radius: 2px;
+margin-bottom: 18px;
+text-align: center;
+letter-spacing: 0;
+padding: 7px 20px;
+}
+
+.betting-table .container {
+max-width: 1500px;
+}
+
+.betting-flex {
+display: flex;
+justify-content: space-between;
+width: 79%;
+align-items: center;
+gap: 33px;
+}
+
+.bet-one {
+display: flex;
+gap: 70px;
+}
+
+
+
+.bet-two {
+display: flex;
+gap: 80px;
+text-align: center;
+justify-content: center;
+}
+
+.betting-card {
+padding: 14px 7px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: var(--white);
+border-radius: 14px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+margin-bottom: 24px;
+position: relative;
+overflow: hidden;
+gap: 10px;
+}
+
+.betting-card-logo {
+text-align: center;
+width: 15%;
+}
+
+.betting-card-logo img {
+max-width: 203px;
+background: var(--white);
+transition: box-shadow 0.2s;
+height: 130px;
+object-fit: contain;
+}
+
+.betting-table-header>div {
+padding: 14px 0;
+color: var(--white);
+font-size: 15px;
+}
+
+.bonus-amount {
+font-size: 1.7rem;
+font-weight: 700;
+line-height: 1;
+}
+
+.bonus-label {
+font-size: 0.97rem;
+font-weight: 600;
+letter-spacing: 0;
+margin-top: 2px;
+}
+
+.betting-card-features {
+list-style: none;
+padding: 0 0 0 8px;
+margin: 0;
+font-size: 1rem;
+font-weight: 500;
+}
+.betting-card-features li{
+color: var(--black) !important;
+}
+.betting-card-action {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.bonus-btn {
+background: var(--green);
+color: var(--white);
+border: 1px solid var(--green);
+font-weight: 700;
+font-size: 13px;
+padding: 13px 28px;
+border-radius: 12px;
+text-decoration: none;
+transition: background 0.2s;
+box-shadow: 0 2px 8px rgba(126, 211, 33, 0.08);
+display: inline-block;
+text-align: center;
+}
+
+.bonus-btn:hover {
+background: transparent;
+color: var(--green);
+}
+
+.betting-card-bonus {
+text-align: center;
+} */
+/* Betting Table Header */

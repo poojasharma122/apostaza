@@ -1,3 +1,30 @@
+  @media (max-width: 1920px) and (min-width: 768px) {
+      .hometable {
+        overflow-x: auto;
+        margin-bottom: 50px;
+      }
+
+      .hometable table {
+        min-width: 1100px; 
+      }
+
+      .hometable::-webkit-scrollbar {
+        height: 10px;
+      }
+
+      .hometable::-webkit-scrollbar-track {
+        background: var(--black);
+      }
+
+      .hometable::-webkit-scrollbar-thumb {
+        background: var(--green); 
+        border-radius: 10px;
+      }
+
+      .hometable::-webkit-scrollbar-thumb:hover {
+       background: var(--green);    
+      }
+    }
 @media (max-width: 1540px) {
     .footer-col a {
         font-size: 14px;
@@ -56,7 +83,12 @@
         border-radius: 8px;
     }
 }
-
+@media (max-width: 1070px) {
+    .hometable{
+            margin-bottom: 50px;
+                padding: 50px 0 10px;
+    }
+}
 @media (max-width: 992px) {
     .header {
         padding: 12px 18px;
@@ -162,6 +194,48 @@
 
 
 @media (max-width: 767px) {
+        /*  Best-Betting Cards*/
+      .hometable table,
+      .hometable thead,
+      .hometable tbody,
+      .hometable tr,
+      .hometable th,
+      .hometable td {
+        display: block;
+        width: 100%;
+      }
+
+      .hometable thead {
+        display: none;
+      }
+
+      .hometable tr {
+        background: #1c2331;
+        margin-bottom: 20px;
+        border-radius: 12px;
+        padding: 15px;
+        box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+        text-align: center;
+      }
+
+      .hometable td {
+        text-align: center;
+        padding: 8px 0;
+        border: none;
+      }
+
+      .hometable td img {
+        width: 100%;
+        height: auto;
+        margin: 0 0 10px;
+      }
+
+      .hometable .btn {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+      }
+   /*  Best-Betting Cards*/
     .betguide-bottom{
         grid-template-columns: 1fr;
     }
@@ -244,6 +318,12 @@
   .bonus-cards {
     display: none;
   } */
+   .hometable td{
+    font-size: 13px;
+   }
+   .hometable td img {
+    max-width: 100%;
+}
        .betano-card .betano-info h2 {
         font-size: 25px;
     }
