@@ -104,8 +104,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 70px;
-    padding: 45px 40px;
+    padding: 12px 40px;
     border-bottom: 2px solid var(--green);
     position: relative;
     z-index: 1001;
@@ -726,9 +725,6 @@ li {
     font-family: var(--Montserrat);
 }
 
-.comparison-main .col-lg-6.col-sm-12 {
-    padding: 0;
-}
 
 section.comparison-main {
     padding: 50px 0 80px;
