@@ -101,7 +101,7 @@
     }
 
     .footer-col.brand-col img {
-        max-width: 125px;
+        max-width: max-content;
     }
 
     .bonus-section .container {
