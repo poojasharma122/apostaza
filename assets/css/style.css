@@ -724,8 +724,6 @@ li {
     color: var(--white);
     font-family: var(--Montserrat);
 }
-
-
 section.comparison-main {
     padding: 50px 0 80px;
 }
@@ -742,3 +740,69 @@ section.comparison-main {
 
 
 /* comparios-page-css-end*/
+
+
+/*Bet-table-start*/
+.bonus-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.bonus-table th,
+.bonus-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  color:#fff;
+}
+
+.bonus-cards {
+  display: none;
+}
+
+.bonus-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.bonus-card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.bonus-card p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.get-bonus {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #ff7f27;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.get-bonus:hover {
+  background: #ff5c00;
+}
+
+/* Responsive Switch */
+@media (max-width: 575px) {
+  .bonus-table {
+    display: none;
+  }
+  .bonus-cards {
+    display: block;
+  }
+}
+
+/*Bet-table-end*/
