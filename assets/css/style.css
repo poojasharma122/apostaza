@@ -176,6 +176,10 @@ p {
 
 /*Header-css-end*/
 /*Footer-css-start*/
+.ssl-inner img {
+    max-width: 220px;
+    margin-top: 20px;
+}
 .footer-col.brand-col img {
     height: 100px;
 }
@@ -500,7 +504,7 @@ h2.commonhead {
     color: var(--white);
     border: 1px solid var(--green);
     font-weight: 700;
-    font-size: 15px;
+    font-size: 13px;
     padding: 13px 28px;
     border-radius: 12px;
     text-decoration: none;
