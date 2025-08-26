@@ -111,7 +111,6 @@ z-index: 1001;
 }
 
 .logo img {
-height: 80px;
 width: 100%;
 display: block;
 max-width: 100%;
@@ -180,9 +179,7 @@ transform: rotate(-45deg) translate(7px, -7px);
 max-width: 200px;
 margin-top: 20px;
 }
-.footer-col.brand-col img {
-height: 80px;
-}
+
 
 .footer {
 border-top: 2px solid var(--green);

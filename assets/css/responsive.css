@@ -248,7 +248,7 @@
     }
 
     .main-banner-text {
-        font-size: 15px;
+        font-size: 15px !important;
     }
 
     h2.commonhead {
