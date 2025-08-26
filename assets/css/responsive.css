@@ -28,7 +28,12 @@
         margin: 0;
     }
 }
-
+@media (max-width: 1200px) {
+       .betano-card .betano-info h2 {
+        right: 0;
+        font-size: 26px;
+    }
+}
 @media (max-width: 1070px) {
     .container {
         padding: 0 30px;
@@ -150,6 +155,9 @@
 .betguideflex .betguide-top {
     flex-direction: column-reverse !important;
 }
+    .betano-card .betano-info h2 {
+        font-size: 34px;
+    }
 }
 
 
@@ -236,6 +244,9 @@
   .bonus-cards {
     display: none;
   } */
+       .betano-card .betano-info h2 {
+        font-size: 25px;
+    }
    .custom-banner {
     height: 400px;
 }
@@ -278,8 +289,10 @@
 
 }
 
-@media (max-width: 400px) {
-
+@media (max-width: 495px) {
+.betano-card .betano-info h2 {
+    position: unset;
+}
     .bonus-label,
     .betting-card-features {
         justify-content: center;

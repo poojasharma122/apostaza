@@ -733,8 +733,14 @@ li {
     flex-direction: column-reverse;
     padding-bottom: 15px;
     gap: 20px;
+    position: relative;
 }
-
+.betano-card .betano-info h2 {
+    position: absolute;
+    left: auto;
+    right: 60px;
+    top: 35px;
+}
 .betano-card p,
 li {
     font-size: 16px;
