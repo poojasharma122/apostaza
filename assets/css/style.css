@@ -565,7 +565,9 @@ h2.commonhead {
     margin-top: 15px;
 }
 
-
+img.twittericon {
+    filter: invert(1);
+}
 /* Footer Pages CSS End*/
 .custom-banner {
     background-size: cover;
