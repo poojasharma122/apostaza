@@ -320,7 +320,6 @@ p {
 }
 
 .legal-notice-title {
-    font-size: 2rem;
     font-weight: 700;
     color: var(--green);
     margin-bottom: 12px;
@@ -582,16 +581,21 @@ img.twittericon {
     justify-content: center;
     position: relative;
 }
-
+.custom-banner::after {
+    position: absolute;
+    content: '';
+    inset: 0;
+    background: #00000061;
+}
 .custom-banner .banner-content {
-    text-align: center;
-
+    text-align: center; 
     padding: 30px 42px;
     border-radius: 12px;
+    z-index: 1;
 }
 
 .custom-banner h1 {
-        color: var(--white);
+        color: var(--green);
     font-size: 2.5rem;
     font-weight: bold;
     margin: 0;
