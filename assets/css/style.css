@@ -982,6 +982,7 @@ gap: 25px;
     height: 100%;
     object-fit: contain;
     max-width: 247px;
+    border-radius: 12px;
 }
 
 .hometable-mobile-logo a {
