@@ -349,6 +349,10 @@
 
           padding: 30px 0 10px;
       }
+
+      .custom-banner {
+          height: 400px;
+      }
   }
 
   @media (max-width:575px) {
@@ -470,6 +474,16 @@
 
           height: 330px;
       }
+
+      .custom-banner {
+          height: 310px;
+      }
+
+      .custom-banner h1 {
+
+          font-size: 30px;
+
+      }
   }
 
 
@@ -494,7 +508,11 @@
           grid-template-columns: 1fr 1.3fr;
       }
 
-      .main-banner {
-          height: 250px;
+      .custom-banner {
+          height: 240px;
+      }
+
+      .custom-banner h1 {
+          font-size: 25px;
       }
   }
