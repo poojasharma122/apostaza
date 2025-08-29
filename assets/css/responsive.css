@@ -411,6 +411,11 @@
           margin-bottom: 0px;
 
       }
+      .hometable-mobile-logo img {
+        
+        max-width: 177px;
+        
+    }
   }
 
   @media (max-width:575px) {
