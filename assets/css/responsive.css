@@ -393,7 +393,7 @@
       }
 
       .main-banner {
-          height: 230px;
+          height: 210px;
       }
 
       .logo img {
@@ -512,10 +512,9 @@
       }
 
       h2.commonhead {
-          font-size: 19px;
-
-          margin-bottom: 20px;
-      }
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
 
       .logo img {
           max-width: 60px;
@@ -607,6 +606,9 @@
           font-size: 20px;
           /* line-height: normal; */
           margin-bottom: 20px;
+          max-width: 280px;
+          margin: 0 auto;
+          margin-bottom: 20px;
       }
   }
 
@@ -655,6 +657,6 @@
           font-size: 20px;
           /* line-height: normal; */
           margin-bottom: 20px;
-          font-weight: 300;
+          /* font-weight: 300; */
       }
   }
