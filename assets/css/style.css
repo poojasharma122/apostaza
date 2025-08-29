@@ -148,7 +148,9 @@ cursor: pointer;
 z-index: 1100;
 margin-left: 18px;
 }
-
+.menu-toggle svg {
+    fill: #60bf80;
+}
 .menu-toggle span {
 display: block;
 width: 28px;
@@ -331,7 +333,7 @@ line-height: 1.6;
 
 /* Banner Styles */
 .main-banner {
-height: 700px;
+height: 650px;
 width: 100%;
 display: flex;
 align-items: center;
