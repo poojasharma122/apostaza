@@ -459,7 +459,7 @@
       }
 
       .logo img {
-          max-width: 60px;
+          max-width: 50px;
       }
 
       .menu-toggle svg {
@@ -471,8 +471,7 @@
       }
 
       .main-banner {
-
-          height: 330px;
+          height: 140px;
       }
 
       .custom-banner {
@@ -483,6 +482,39 @@
 
           font-size: 30px;
 
+      }
+
+      .commontext-para p {
+          font-size: 13px !important;
+      }
+
+      .commonhead {
+          font-size: 16px;
+
+      }
+
+      .commonhead {
+
+          margin-bottom: 20px;
+
+      }
+
+      h2.commonhead {
+          font-size: 16px;
+          /* line-height: normal; */
+          margin-bottom: 20px;
+      }
+
+      .commontext-main {
+          padding: 0px 0;
+      }
+
+      .main-banner-title {
+          font-size: 16px;
+      }
+
+      .container {
+          padding: 0 10px;
       }
   }
 
@@ -514,5 +546,22 @@
 
       .custom-banner h1 {
           font-size: 25px;
+      }
+
+      .commonhead {
+          font-size: 16px;
+
+      }
+
+      .commonhead {
+
+          margin-bottom: 20px;
+
+      }
+
+      h2.commonhead {
+          font-size: 16px;
+          /* line-height: normal; */
+          margin-bottom: 20px;
       }
   }
