@@ -399,6 +399,12 @@
       .logo img {
           max-width: 70px;
       }
+
+      .hometable-mobile-flex {
+
+          grid-template-columns: 1fr 2fr;
+
+      }
   }
 
   @media (max-width:575px) {
