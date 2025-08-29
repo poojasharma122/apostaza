@@ -583,13 +583,13 @@
 
       }
 
-      
+
 
       .commontext-main {
           padding: 0px 0;
       }
 
-    
+
 
       .commontext-main .container {
           padding: 0 10px;
@@ -652,8 +652,9 @@
       }
 
       h2.commonhead {
-          font-size: 16px;
+          font-size: 20px;
           /* line-height: normal; */
           margin-bottom: 20px;
+          font-weight: 300;
       }
   }
