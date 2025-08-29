@@ -260,7 +260,7 @@
       }
 
       .main-banner {
-          height: 450px;
+          height: 300px;
       }
 
       .main-banner-title {
@@ -346,12 +346,58 @@
       }
 
       .hometable {
-
-          padding: 30px 0 10px;
+          padding: 15px 0 10px;
       }
+
+
 
       .custom-banner {
           height: 400px;
+      }
+
+      .commontext-main {
+          padding: 0px 0;
+      }
+
+      .commonhead {
+          font-size: 16px;
+
+      }
+
+      .commonhead {
+
+          margin-bottom: 20px;
+
+      }
+
+      h2.commonhead {
+          font-size: 22px;
+          /* line-height: normal; */
+          margin-bottom: 20px;
+      }
+
+      .commontext-para p {
+          font-size: 16px;
+      }
+
+      .commontext-main .container {
+          padding: 0 10px;
+      }
+
+      .main-banner-title {
+          font-size: 22px;
+      }
+
+      .commontext-para p {
+          font-size: 15px;
+      }
+
+      .main-banner {
+          height: 230px;
+      }
+
+      .logo img {
+          max-width: 70px;
       }
   }
 
@@ -426,7 +472,7 @@
 
       .main-banner {
           padding: 43px 10px;
-          height: 390px;
+          height: 210px;
       }
 
       .logo img {
@@ -435,6 +481,20 @@
 
       .menu-toggle svg {
           width: 30px;
+      }
+
+      .commontext-para p {
+          font-size: 14px !important;
+      }
+
+      h2.commonhead {
+          font-size: 19px;
+
+          margin-bottom: 20px;
+      }
+
+      .logo img {
+          max-width: 60px;
       }
   }
 
@@ -471,7 +531,7 @@
       }
 
       .main-banner {
-          height: 140px;
+          height: 210px;
       }
 
       .custom-banner {
@@ -513,7 +573,7 @@
           font-size: 16px;
       }
 
-      .container {
+      .commontext-main .container {
           padding: 0 10px;
       }
   }
