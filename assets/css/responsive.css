@@ -405,6 +405,11 @@
           grid-template-columns: 1fr 2fr;
 
       }
+      .main-banner-title {
+       
+        margin-bottom: 0px;
+       
+    }
   }
 
   @media (max-width:575px) {
@@ -524,9 +529,9 @@
           padding: 31px 10px;
       }
 
-      .logo img {
-          max-width: 50px;
-      }
+      .main-banner {
+        height: 170px;
+    }
 
       .menu-toggle svg {
           width: 25px;
