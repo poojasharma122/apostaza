@@ -416,6 +416,11 @@
         max-width: 177px;
         
     }
+    .main-banner {
+       
+        border-radius: 0 0 0 0;
+       
+    }
   }
 
   @media (max-width:575px) {
