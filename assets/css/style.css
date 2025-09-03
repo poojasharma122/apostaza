@@ -332,8 +332,14 @@ line-height: 1.6;
 
 
 /* Banner Styles */
+.commontext-main.homepagenew {
+       padding: 30px 0 11px;
+}
+.hometable h2.commonhead{
+    margin-bottom: 20px;
+}
 .main-banner {
-height: 650px;
+height: 350px;
 width: 100%;
 display: flex;
 align-items: center;
@@ -439,7 +445,7 @@ filter: invert(1);
 /*  Best-Betting-Start-Css-Start*/
 .hometable {
     width: 100%;
-    padding: 50px 20px;
+    padding: 10px 20px;
 }
 /* .hometable .container {
     max-width: max-content;
